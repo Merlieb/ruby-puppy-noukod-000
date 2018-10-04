@@ -5,4 +5,10 @@ class Dog
       @name = name
       @@all << self
     end
-  end
+    def self.all
+      @@all.each do |dog|
+       puts dog.name
+     end
+    end
+    
+    end
